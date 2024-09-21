@@ -7,7 +7,7 @@ interface PointsLayerProps {
   /** @default true */
   heatmap?: boolean
   /** @default true */
-  bubblemap?: boolean
+  pointmap?: boolean
   data: DataEntry[]
 }
 
@@ -33,8 +33,8 @@ export const PointsLayer = (props: PointsLayerProps) => {
   return (
     <Source type="geojson" data={geojsonData}>
       {props.heatmap !== false && <Layer {...heatmapLayer} />}
-      {props.bubblemap !== false && <Layer {...iconLayer} />}
-      {props.bubblemap !== false && <Layer {...circleLayer} />}
+      {props.pointmap !== false && <Layer {...iconLayer} />}
+      {props.pointmap !== false && <Layer {...circleLayer} />}
     </Source>
   )
 }

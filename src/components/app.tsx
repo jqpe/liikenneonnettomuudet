@@ -235,7 +235,7 @@ export const App = () => {
             <PointsLayer
               data={filteredData}
               heatmap={form.getFieldValue('heatmap')}
-              bubblemap={!form.getFieldValue('heatmap')}
+              pointmap={!form.getFieldValue('heatmap')}
             />
           )}
         </Map>
